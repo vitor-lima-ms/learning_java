@@ -34,30 +34,41 @@ public class Main {
 //			System.out.printf("Largest Y = %.4f", areaY);
 //		}
 		
-		Product product;
-		product = new Product();
+//		Product product;
+//		product = new Product();
 		
-		System.out.println("Enter product data: ");
-		System.out.print("Name: ");
-		product.name = sc.next();
-		System.out.print("Price: ");
-		product.price = sc.nextDouble();
-		System.out.println("Quantitity in stock: ");
-		product.stock = sc.nextInt();
+//		System.out.println("Enter product data: ");
+//		System.out.print("Name: ");
+//		product.name = sc.next();
+//		System.out.print("Price: ");
+//		product.price = sc.nextDouble();
+//		System.out.println("Quantitity in stock: ");
+//		product.stock = sc.nextInt();
+//		
+//		System.out.printf("Product data: %s, $ %.2f, %d units, Total: $ %.2f", product.name, product.price, product.stock, product.totalValueInStock());
+//		
+//		System.out.print("Enter the number of products to be added: ");
+//		int addedProducts = sc.nextInt();
+//		product.addProducts(addedProducts);
+//		System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f", product.name, product.price, product.stock, product.totalValueInStock());
+//		
+//		System.out.print("Enter the number of products to be removed: ");
+//		int removedProducts = sc.nextInt();
+//		product.removeProducts(removedProducts);
+//		System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f", product.name, product.price, product.stock, product.totalValueInStock());
+//		
+//		sc.close();
 		
-		System.out.printf("Product data: %s, $ %.2f, %d units, Total: $ %.2f", product.name, product.price, product.stock, product.totalValueInStock());
+//		product.name = "TV";
+//		product.price = 900.00;
+//		product.stock = 10;
+//		System.out.println(product.toString());
 		
-		System.out.print("Enter the number of products to be added: ");
-		int addedProducts = sc.nextInt();
-		product.addProducts(addedProducts);
-		System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f", product.name, product.price, product.stock, product.totalValueInStock());
+//		System.out.printf("%.2f%n", Calculator.circumference(3));
+//		System.out.printf("%.2f", Calculator.volume(3));
 		
-		System.out.print("Enter the number of products to be removed: ");
-		int removedProducts = sc.nextInt();
-		product.removeProducts(removedProducts);
-		System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f", product.name, product.price, product.stock, product.totalValueInStock());
-		
-		sc.close();
+		Product product = new Product("TV", 900, 10);
+		System.out.println(product);
 	}
 
 }
